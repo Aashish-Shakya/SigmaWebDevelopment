@@ -1,0 +1,43 @@
+# Topic - ID and Classes in HTML
+
+<!-- 
+ID - [Phechan] AN id is an attribute, a unique identifier assigned to only one HTML element within a page. It often used for unique styling and Javascript manipulation
+ID also worker in generating links
+
+Class - This attribute lets you give the same name to multiple HTML elements. That way you can easily change their look behaviour all at once. CLasses are not unique and can be assigned to multiple elelements. They are generally used for appplying the same styles or behavors to a group of elements.
+
+
+Precedence  - Id >> Class
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.red{
+ color: red;
+}
+
+#firstdiv{
+background-color: green;
+}
+#seconddiv{
+background-color: green;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+    </style>
+ </head>
+ <body>
+    
+    <div class="red bg-yellow" id="fistdiv">First</div>
+    <div class=" " id="seconddiv">Second</div>
+    <span class="red"></span>
+
+ </body>
+ </html>

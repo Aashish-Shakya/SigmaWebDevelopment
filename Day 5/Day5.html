@@ -1,0 +1,134 @@
+# Topic -  Images, Lists and Tables in HTML
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Image Tag -->
+    <!-- src - is the source of the image -->
+    <!-- alt - is visible on page when the image is not available -->
+    <!-- width - used to give widht in px-->
+    <!-- height -used to give height in px   -->
+
+    <img src="image (27).png" alt="Train Image" width="230" height="230">
+
+
+
+    <!-- Table Tag  -->
+
+    <table>
+        <!-- Used to give name -->
+        <caption>User Data</caption>
+        <thead>
+            <tr>
+                <!-- Table Header -->
+                <th>Name</th>
+                <th>Last name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <!-- Row -->
+        <tbody>
+            <tr>
+                <!-- Table data -->
+                <!-- Rowspan - How many cell need to cover by td  vertically-->
+                <td>Aash</td>
+                <td rowspan="2">Shakya</td>
+                <td>20</td>
+                <td>M</td>
+
+            </tr>
+
+            <tr>
+                <td>Sash</td>
+                <td>22</td>
+                <td>F</td>
+            </tr>
+
+            <tr>
+                <!-- Collspan - How many cell need to cover by td horizontally-->
+                <td colspan="2">Sash</td>
+                <td>22</td>
+                <td>F</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+<!-- List 
+  Ordered List
+  Unordered list
+  Definition List   - used rarely 
+-->
+
+<!-- Unordered list -->
+<!-- Bullets can we customized using type attribute 
+ we have 3 type
+ disc - defualt
+ square
+ circle -->
+<ul type = square>
+    <li>harry</li>
+    <li>Ash</li>
+    <li>Fun</li>
+    <li>Run</li>
+</ul>
+
+<!-- Ordered list -->
+<!-- Bullets can we customized using type attribute 
+ we have 5 type
+ I - Uppercase Roman Number
+ i -Lowercase Roman Number
+ 1 - Arabic Number - Default
+ a - Loweecase Alphabet
+ A - Uppercase Alphabet
+ circle -->
+<ol type="a">
+    <li>harry</li>
+    <li>Ash</li>
+    <li>Fun</li>
+    <li>Run</li>
+</ol>
+
+<!-- Defination list  -->
+
+<dl >
+    <dt>HTML</dt>
+    <dd>Hyper Text Mark Up lang Lorem ipsum dolor sit amet.
+    </dd>
+    <dt>CSS</dt>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, reprehenderit.
+    </dd>
+    <dt>Javascript</dt>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, reprehenderit.
+    </dd>
+</dl>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+# Topic - Forms and Input Tags in HTML
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form Ilustration</h1>
+    <!-- Forms -->
+    <!-- get request - Simple request
+      post request - Used to send data -->
+
+
+    <form action="post">
+        <!-- The input tag is used to take input from user 
+ Lable tag is used to label the inputs-->
+
+        <div>
+            <!-- Attribute name should be same to select on one -->
+            <label for="username">User Name</label>
+            <input id="username" type="text" name="user" placeholder="ENter" autofocus>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input id="male" type="radio" name="gender" value="male">
+            <label for="female">Female</label>
+            <input id="female" type="radio" name="gender" value="Female">
+        </div>
+        <div>
+            <input id="check" type="checkbox" name="check">
+            <label for="check">Checkbox</label>
+        </div>
+
+
+        <div>
+            <label for="comment">ENter Comment</label>
+            <br>
+            <textarea name="comment" rows="4" cols="50" id="comment">Enter ....</textarea>  
+        </div>
+
+
+
+
+<div>
+    <select name="fruits">
+        <option value="apple">Apple</option>
+        <option value="apple">Apple</option>
+        <option value="apple">Apple</option>
+        <option value="apple">Apple</option>
+
+    </select>
+</div>
+
+    </form>
+
+
+    <!-- Block   element  - Div
+      Inline Element-->
+</body>
+
+</html>

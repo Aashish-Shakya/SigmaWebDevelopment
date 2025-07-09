@@ -1,0 +1,37 @@
+# SEO and Core Web Vitals in HTML
+
+
+SEO - Search Engine Optimization
+
+web.dev - Amazing website for Web vitals
+
+Core Web Vitals
+
+1. CLS - Cummulative Layout Shift
+Page load hote ote kitna shift hora hai 
+
+2. LCP - Largets Contentiful Paint
+Bigger/Imp part/element kitni der mai load hora hai 
+
+Good Score - 2.5 
+
+3. FID - First Input deleay
+If user clicks on any type of Input
+How long will it take to process it\
+
+Good Score - 100 mili seconds
+
+
+
+Lighthouse  - Inpect the website there you will find option
+
+It generate a report and tell you ki apke page mai kya kya improve ho skta hai 
+
+
+# Meta tags
+
+Title Tag - If you title reflects you page content then it good SEO Practice
+
+Meta Description - Is used to describe the page content
+
+
