@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: yellow;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px; /*This will give content height to 200 and actual height of element will be margin border and padding sum*/
+            box-sizing: border-box; /*This will fit everything in 200px which include border and padding not margin*/
+
+        }
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+        }
+
+        /* here margin of box1 and box2 are matching in between is 25px not 50px
+        
+Margin Collapsiing - Says if anywhere margin is collapsing then maximun=m margin will be shown */
+    </style>
+</head>
+
+<body>
+
+    <!-- CSS BOXMODEL
+    In css everything is in form of box such as span div etc.. 
+    
+    Margin - Border- Padding -- Content 
+
+   
+    Margin - Element ke bhar
+    Padding - Content ke bhar
+    
+
+    Height of a element will be calulated using Left right padding + Margin + Border ... 
+    -->
+
+
+    <div class="box box1">I am a box1</div>
+    <div class="box box2">I am a box2</div>
+
+</body>
+
+</html>

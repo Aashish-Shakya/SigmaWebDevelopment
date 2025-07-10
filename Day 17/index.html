@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Element Selector */
+        div {
+            background-color: red;
+        }
+
+        /* class selector */
+        .red {
+            background-color: yellow;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* child selector */
+        div>p {
+            color: blue;
+            background-color: pink;
+        }
+
+        /* descendant selector */
+        div p {
+            color: blue;
+            background-color: violet
+        }
+
+
+         /* Universal selector */
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+/* pseudo selector */
+
+/* below are all psueduo seltor */
+        /* after click */
+        a:visited {
+            color: yellow;
+        }
+
+        /* before click */
+        a:link {
+            color: green;
+        }
+
+        /* while clicking */
+        a:active{
+            background-color: red;
+        }
+
+        /* on hover */
+        a:hover{
+           background-color: blueviolet; 
+        }
+
+/* if p is a first child of its parent, apply these properties */
+       p:first-child{
+        background-color: aqua;
+       }
+    </style>
+</head>
+
+<body>
+    <div>
+        I another Div
+    </div>
+    <div class="red">
+        I am a Div
+    </div>
+    <div id="green">
+        I another Div
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi harum sunt aspernatur tenetur quaerat
+            nam neque reiciendis animi, dolorem aut id veritatis possimus odio iure esse nulla. Provident, fuga?</p>
+    </div>
+
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis et voluptate nam error! Molestiae
+                consequuntur corporis iure dicta quis. Vitae quasi voluptatum architecto repellendus alias eos
+                laudantium excepturi itaque voluptatibus.
+            </p>
+        </article>
+    </div>
+
+
+
+
+
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.google1.com">Go to Facebok</a>
+
+
+
+    <div class="one">
+       <p>I am one</p>
+       <p>I am two</p>
+    </div>
+</body>
+
+</html>
