@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html{ /*html is root elemt*/
+            font-size: 12px;
+        }
+
+        .box{
+            font-size: 2rem;
+            /* it means 2 times of root elemt euals 12*2 = 24 */
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aqua;
+            /*This property os used only for block line element and mRGIN AUTO applies margin from both side equally which results in centring the elemtn*/
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px; */
+            width: 80vw;
+            height: 50vh;
+            margin: 23px auto;
+            background-color: lawngreen;
+            font-size: 20px;
+
+        }
+
+        .container p{
+            font-size: 1em;
+            font-size: 2em;
+            /* em - it increases the font inherit from parent em times in our code it will be 2 times of 20 equals 40 
+            If we use 1 em then it remain same as parent*/
+        }
+
+        .mycont{
+            /* background-color: red; */
+            box-sizing: border-box;
+            margin: 23px auto;
+            border: 2px solid black;
+            font-size: 22px;
+            width: 80vw;
+
+
+        }
+
+        .container{
+            min-height: 80vh; /*  atleast 80vh height and if content increases then height increases acordingly*/
+        }
+        .container p{
+           width: 50%; /* It will give 50% widht of parent to p */
+           border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iure totam, esse numquam saepe
+            provident
+            voluptates maiores molestias ad, reiciendis quia ducimus ea exercitationem omnis at libero? Autem sunt
+            reiciendis vero molestiae, reprehenderit ipsa minima accusantium quod sint hic nesciunt a odit. Quaerat esse
+            repudiandae nobis aperiam! Temporibus assumenda suscipit, nihil corrupti quis esse officiis est?
+        </p>
+    </div>
+
+    <div class="mycont">
+        I am another conatiner
+
+        <!-- vmin - if in phone then its vw and in laptop it vh
+         like 100vmin means whatever is min will be 100 
+         ans vice versa for vmax
+         
+         vmax - if in phone then its vh and in laptop it vw-->
+    </div>
+    <!-- 
+    px - pixels
+    vw - viewport Widht - Dynamic/responsive 
+    em - x times inherit from parent
+    rem - x times root element 
+    vmin - depends on size of screen
+    vmax - depends on size of screen
+    min-hiehgt
+    min-widht
+    %widht - % widht of parent
+    %hieght =- % hight of parent--> 
+
+</body>
+
+</html>
