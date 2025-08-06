@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+/* This will covert a div into an Inlin element */
+        .box {
+            border: 2px solid blue;
+            display: inline;
+            padding: 45px;
+            margin: 34px;
+            /* Note - FOr inline the top padding and margin won't work to resolve this use inline block */
+            width: 500px;
+            /* One more thing for Inline elements widht won't work to resolve this as wll use inline block */
+        }
+
+        .box{
+            display: inline-block;
+        }
+
+
+       .box1{
+        display: none;
+        /*This will remove the element totally it existance and it occupied space*/
+        /* But is we use  */
+        visibility: hidden;
+        /* this will only hide it */
+       }
+        
+       .box{
+        /* we will learn these later */
+        /* display: flex;
+        display: grid; */
+       }
+    </style>
+</head>
+
+<body>
+    <!-- Div - Block Level elemt and SPan Inline elemt -->
+    <div class="box">
+        I am a Box
+    </div>
+    <div class="box box1">
+        also a Nice one
+    </div>
+    <span>I am a Good</span>
+    <span>Boy</span>
+</body>
+
+</html>
