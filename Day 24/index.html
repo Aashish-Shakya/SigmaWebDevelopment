@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+
+    <!-- Shadows - to give visually shadwon to any element
+      -->
+    <!--  attributes for shadow
+             box-shadow: h-offset v-offset blur spread color inset ; 
+      h-offset  and v-offset - horizontal and vertical positions
+      blur - large vlaue = blurier shadow
+      spread - expands or shrinks the shadow size
+      color - shadow color
+      inset - makes the shadown inner side      
+             -->
+    <!-- We have tex-shadow similar to box shadow  -->
+
+
+    <!-- Outline - Outlines
+An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighting focused elements.
+
+Syntax - outline - width style color 
+
+Differences between Outlines and Borders:
+While both can visually appear similar, outlines differ from borders in a few ways:
+
+Position: Outlines don't take up space; they're drawn around the element, outside of any border.
+Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+Width: Borders can have varying widths on different sides, outlines have a uniform width.
+Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot. it will follow border radius
+-->
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 15px 5px #70a711;
+            outline: 2px solid green;
+            outline-offset: 3px;
+        }
+
+        .text-element {
+            text-shadow: 2px 2px 4px #ed1717;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+        I am a box
+    </div>
+
+
+    <p class="text-element">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores vitae tempore labore
+        dolorum eum nisi unde, aliquam voluptate deleniti quos? Qui error est saepe velit. Temporibus, quae delectus?
+        Atque, quo?</p>
+</body>
+
+</html>

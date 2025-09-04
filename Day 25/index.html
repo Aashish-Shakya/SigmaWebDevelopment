@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists using CSS </title>
+
+    <style>
+        /* Bydefault list is display:list-item [Makrer+item] */
+        /* to change this we use list style  */
+        nav ul li {
+            list-style: circle;
+            /* list-style-type: "😂"; */
+            background-color: yellow;
+            /* bydefault list item and marker are separated if you apply bg it will only apply to list not marker to make them one we use list-style-position prop. */
+            list-style-position: inside;
+            border: 2px solid black;
+            /* list-style-image: url("https://tse1.mm.bing.net/th/id/OIP.cn_rfERBvXNSHYHizVWklQHaHv?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"); */
+
+/* we can use it like this as well comn=bine approach if img is not there then disc will appeear */
+            /* list-style: disc inside url("https://tse1.mm.bing.net/th/id/OIP.cn_rfERBvXNSHYHizVWklQHaHv?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"); */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

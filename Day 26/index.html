@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overfloe Property</title>
+    <style>
+        /* <!-- If the wifdht of any element is leass anfd the content present insisdfe is more than items present inside overflow and we can manage this thing using Overflow property1
+  --> */
+
+        .box {
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+        }
+
+        /* now you can see the content will overflow ffrom box so we can fix it in two ways */
+
+        .box {
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            height: 40vh;
+            /* white-space: nowrap; This will make horizonal text in one line means horizontal scroolbar */
+            /*This will collapse text overflow and show it with three dots  */
+            /* overflow: hidden; */
+            /* text-overflow: ellipsis; */
+            /* Clip will stop scroll programatically */
+            /* overflow: clip; */
+        }
+
+        .box {
+
+            width: 30vw;
+            height: 20vh;
+            /* overflow-x: hidden;
+               overflow-y: auto; */
+
+            /* combine appraoch1 */
+            overflow: hidden auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, unde esse. Veritatis
+        necessitatibus deleniti velit enim commodi pariatur eligendi explicabo sed voluptatem sapiente vitae nihil cum
+        magnam eos esse, eius, perferendis nostrum, iure quas cupiditate! Nobis dolorum non, eligendi nostrum commodi
+        veritatis amet hic? Cum incidunt porro temporibus ducimus laudantium est dolores labore, facilis officia,
+        impedit, nesciunt nam minima quam iusto provident quaerat ipsa cupiditate veniam sit maiores id animi! Sint
+        velit incidunt sit odit totam possimus error voluptas maiores, illum natus quo molestias tenetur quae laboriosam
+        saepe minus iure nesciunt corporis dolor reprehenderit sequi, qui quia. Fuga, sint officia!
+    </div>
+</body>
+
+</html>
