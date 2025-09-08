@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <!--  wejust change th color of whole web using only two variables -->
+
+    <style>
+        /* global variable that can be used anywhere */
+        /* not only color we can store any prop/values in variable and use it later */
+        :root {
+            --color: blue;
+            --seccolor: rgb(129, 129, 243);
+            --defpad: 23px;
+            --defop: 0.3;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color)
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style-type: none;
+            /* padding: 34px; */
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+
+        /* declare the local variable and use it here itself */
+        ul li:first-child {
+            --color: rgb(239, 158, 6);
+            background-color: var(--color);
+            opacity: var(--defop);
+        }
+
+        /* if variable is not found then? then we can use a fallback value if this not then this*/
+        ul li:first-child {
+            background-color: var(--colors, pink);
+        }
+
+        .container {
+            background-color: var(--seccolor)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolore, eveniet repellat ad possimus quam
+        dignissimos quos ea dolores architecto, quibusdam numquam tenetur perspiciatis recusandae placeat aspernatur
+        voluptate doloremque cumque molestiae velit nihil voluptas reiciendis eaque modi. Deserunt, porro delectus
+        voluptate perspiciatis cumque omnis amet.
+    </div>
+</body>
+
+</html>
