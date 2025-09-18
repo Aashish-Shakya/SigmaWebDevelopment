@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color: yellow;
+        }
+
+        /* Universal selector used in this way */
+        .boxes *{
+            border: 2px solid black;
+        }
+
+        /* Attribut selector */
+        [data-color="primary"]{
+            margin-top: 45px;
+            padding: 20px;
+        }
+
+        /* group selector */
+        p, a, .box {
+            padding-left: 100px;
+        }
+
+
+        .box:nth-child(even){
+            background-color: blue;
+        }
+
+
+        .box:nth-last-child(2){
+            background-color: pink;
+        }
+
+        /* Psuedo Elements */
+/* this will add content before boxes div
+Adding an element directly via css */
+        .boxes::before{
+            content: "Aashis is good";
+            color: aqua;
+        }
+        .boxes::after{
+             content: "Aashis is Bad";
+             color: brown;
+        }
+
+
+        .boxes::selection{
+            color: green;
+            background-color: yellow;
+        }
+
+        .box::first-letter{
+            color: peru;
+            font-size: 45px;
+        }
+
+        
+        input::placeholder{
+            background-color: bisque;
+        }
+
+
+
+    </style>
+</head>
+<body>
+ <div class="boxes">
+
+    <div class="box">Hey I am a box 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur quia, ad quo, mollitia aspernatur, cum sequi perspiciatis pariatur nostrum asperiores culpa esse veritatis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut dolores facilis eum voluptate placeat at fugit beatae laborum nostrum aliquam velit minus sit, ratione officia corrupti laboriosam nam! Consequuntur, eum.m
+    </div>
+    <div class="box">Hey I am a box 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla fugit blanditiis numquam error a possimus nihil soluta laboriosam tenetur nobis in cupiditate, dolorem voluptatem rerum suscipit unde voluptatibus itaque molestiae voluptate inventore voluptas illo ut? Nobis dolor vero esse iure necessitatibus animi neque fuga!</div>
+    <div class="box" data-color="primary">Hey I am a box 3</div>
+     
+    <input type="text" placeholder="Type name">
+ </div>
+    
+</body>
+</html>
