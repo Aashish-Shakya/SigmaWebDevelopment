@@ -5,12 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 4 - Multi Color Website</title>
+
+    <style>
+        :root {
+            --bg-primary: blue;
+            --bg-secondary: gray;
+            --bg-success: green;
+            --primary: blue;
+            --secondary: gray;
+            --success: green;
+            --white: white;
+            --black: black;
+
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: var(--black);
+        }
+
+        nav {
+            margin: 10px;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            padding: 10px;
+            background-color: var(--bg-primary);
+            color: var(--white);
+            border-radius: 20px;
+        }
+
+        span {
+            margin-left: 80px;
+            padding: 40px;
+
+        }
+
+        .icon {
+            margin-left: 400px;
+        }
+
+        main div p {
+            color: var(--success);
+
+        }
+
+        main div img {
+            float: left;
+            /* display: flow-root; */
+            border: 2px solid var(--white);
+            margin: 10px;
+
+
+        }
+        .last{
+            clear: both;
+        }
+    </style>
 </head>
 
 <body>
     <!-- vid 30 concepts -->
-<!-- Create a Multi Color Navbar 
- The color can be changes pn changing one varibale -->
+    <!-- Create a Multi Color Website which can change color using css variable-->
+
+
+    <nav class="navbar">
+
+        <span>Home</span>
+        <span>About</span>
+        <span>Contact</span>
+        <span>Cart</span>
+
+        <span class="icon">Profile</span>
+
+    </nav>
+
+    <main>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dolor ullam quam corporis aliquid neque
+                minus ducimus commodi? Recusandae, ipsam minima iste dolorem eligendi maiores quasi nulla minus
+                voluptatibus nam iusto saepe consectetur blanditiis atque corrupti, possimus molestias consequatur
+                impedit beatae, ullam in? Odio vel nisi consequatur repudiandae, exercitationem dicta hic? Consequatur
+                quisquam obcaecati aliquid maxime, tenetur voluptates nisi sint distinctio, numquam itaque asperiores
+                adipisci qui mollitia beatae assumenda facere sapiente corrupti. Sapiente officiis dolore quibusdam
+                numquam veniam praesentium delectus, fugit, architecto blanditiis provident placeat temporibus sint!
+                Nesciunt, obcaecati reiciendis?</p>
+
+            <img src="https://tse4.mm.bing.net/th/id/OIP.p_7o-vdk22y0marhc5Q9IwHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="image" width="700" height="400">
+
+
+            <p>Lorem ipsum dolor sit amet.0 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quo suscipit
+                nemo consequatur. Magnam voluptates adipisci labore officia eligendi! Esse dolor mollitia expedita
+                corrupti rem atque assumenda accusamus reiciendis, quibusdam unde officiis ratione harum nemo cum
+                laboriosam sequi vitae? Molestiae voluptate animi non natus nostrum? Eligendi quibusdam quis facilis
+                minus!lore50
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, labore ratione! Voluptates blanditiis, cumque, commodi ex sed ipsum dolorum quos ad, odio voluptas et adipisci? Odit neque temporibus fuga accusantium, et similique quidem, totam animi quod rerum eligendi velit veritatis adipisci officia obcaecati. Impedit quis necessitatibus in magnam, soluta eligendi.</p>
+
+            <div class="last">
+                <h1>Hahahha</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nesciunt nisi amet, fuga voluptatibus temporibus. Natus, nobis, recusandae mollitia reiciendis perferendis unde magni quos obcaecati corporis velit non, at autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sapiente nesciunt libero numquam! Ipsa pariatur, vitae voluptate aperiam, est omnis ducimus ratione dolore fugiat quaerat ab voluptatum unde! Fuga minima laboriosam fugiat fugit dignissimos? Quia voluptate unde ea harum modi dicta debitis eaque sapiente, recusandae similique est, aliquid hic excepturi?</p></div>
+
+        </div>
+    </main>
 </body>
 
 </html>
