@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+19 Sep
+Started 3:30
+ended 5PM 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Design the layout present in the image using what ever we have learned till yet</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* background-color: gray; */
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+        }
+
+        nav {
+            /* width: 100vw; */
+            background-color: blueviolet;
+            position: sticky;
+            top: 0px;
+            padding: 10px;
+
+        }
+
+        nav li {
+            list-style: none;
+            display: inline;
+            color: white;
+            padding: 10px 60px;
+            font-weight: 600;
+        }
+
+        main {
+            background-color: lawngreen;
+            height: 85vh;
+
+            /* padding: 10px; */
+            border: 2px solid black;
+            margin: 20px;
+            width: 96vw;
+        }
+
+
+        .box {
+            margin: 100px;
+            margin-top: 120px;
+            width: 35%;
+            height: 65%;
+            border: 5px solid white;
+        }
+
+        .box1 {
+            background-color: aqua;
+
+            float: left;
+        }
+
+        .box2 {
+            background-color: blueviolet;
+
+            float: right;
+        }
+
+        section {
+            background-color: burlywood;
+            /* width: 100%; */
+            height: 40vh;
+            border-radius: 40px;
+            border: 2px solid black;
+            margin: 30px;
+            text-align: center;
+
+        }
+
+        section div {
+            padding-top: 120px;
+        }
+
+        section div h1 {}
+
+        .icon {
+            background-color: blueviolet;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 50px;
+            margin: 20px;
+
+            position: fixed;
+            bottom: 8%;
+            right: 2%;
+            margin-top: 20px;
+            box-shadow: 3px 3px 3px gray;
+            color: white;
+
+        }
+
+
+
+        footer {
+
+            background-color: black;
+            padding: 10px;
+            margin-top: 40px;
+            align-items: center;
+            text-align: center;
+            color: white;
+            height: 10vh;
+        }
+
+        footer li {
+            list-style: none;
+            display: inline;
+            color: white;
+            background-color: none;
+            padding: 60px;
+            font-weight: 600;
+        }
+
+        footer h5 {
+            margin: 30px;
+            color: red;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="box box1"> </div>
+        <div class="box box2"> </div>
+
+
+    </main>
+
+    <section>
+        <div>
+            <h1>Welcome to this Web Developemnt Course</h1>
+            <span>By. Aashish</span>
+        </div>
+    </section>
+
+    <span class="icon">Chat</span>
+
+    <footer>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+        <h5>© 2025 All rights reserved</h5>
+
+
+    </footer>
+</body>
+
+</html>
