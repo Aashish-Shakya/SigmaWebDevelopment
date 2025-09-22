@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            /* Using this we can use flexbox property */
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            justify-content: space-around;
+            justify-content: space-between;
+            /*and many more property fot justify we can explain it later*/
+
+            align-items: center;
+            /* same goes for align item top left right . . . */
+
+            /* in columns 1234*/
+            flex-direction: column;
+
+            /* reverse column 4321*/
+            flex-direction: column-reverse;
+
+            /* looks defualt */
+            flex-direction: row;
+
+            /* row reverse 4321 */
+            flex-direction: row-reverse;
+
+        }
+
+        /* In flexdirection is bydefault left to right that can be changes */
+
+        .item {
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: violet;
+        }
+    </style>
+
+    <!-- There are two axis main and cross axis for flexbox
+
+    Main axis -- in direction of items
+    Cross axis -- prependiclur to main
+    justfy content align according to Main Axis
+    
+    align item align according to cross axis
+    -->
+
+
+    <style>
+        /* flex wrap */
+        .container {
+            justify-content: center;
+
+            flex-wrap: wrap;
+            /* 4321 */
+            flex-wrap: wrap-reverse;
+
+            align-content: center;
+        }
+
+
+        /* Align content
+        when we have multiple lines then we can centre that whole content using it */
+
+
+        /* there is no justifyitiem in */
+
+
+        /* flex-flow */
+        .container {
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            /*let's combine them using flex flow  */
+
+            flex-flow: row wrap;
+            margin: 0;
+            /* we can define gas between item */
+            /* gap: 30px; */
+            /* row-gap: 20px;
+            column-gap: 40px; */
+
+            /* combine row and col gap*/
+            gap: 20px 40px;
+        }
+
+        /* Till we stuided every prop is used in container not in items */
+
+
+        /* lets defin 3 class */
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+        /* Jitna jyada order vo item utna end mai aayega 
+        default order 0*/
+
+        /* flex-grow - it fill tell how much widht to occupy to each item
+    0 - deault
+    1- eequally width distributed to all items */
+        .item {
+            flex-grow: 1;
+
+        }
+
+        .item1 {
+            /* it takes widht of 4 item */
+            flex-grow: 2;
+        }
+
+        /* to shrink a flex item
+        2 means it will shirnk 2wice times that will be visible when nowarap and screen is shirking */
+        .container {
+            flex-wrap: nowrap;
+        }
+
+        .item2 {
+            flex-shrink: 2;
+        }
+
+        /* align self - align a single item for this to work needs to remove  align content */
+        .item2{
+            align-self: baseline;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-3">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item item1">100</div>
+            <div class="item"></div>
+            <div class="item order-1">20</div>
+            <div class="item item2">s</div>
+
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
