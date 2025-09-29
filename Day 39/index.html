@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        .container {
+            border: 2px solid black;
+            /* this will treat it as lines and then we can divide it in col and rows */
+            display: grid;
+            /* grid-template-columns: 150px 100px; */
+            grid-template-rows: 100px 100px 100px;
+        }
+
+        .item {
+            /* width: 55px; */
+            height: 55px;
+            border: 2px solid red;
+        }
+
+        /* we can place any item anywere */
+        .item4 {
+            grid-row: 1/2;  /*1 sai start ho 2 tk jaye*/
+            grid-column: 1/2;/*1 sai start ho 3 tk jaye*/
+
+            /* but this will replace the original item place at that place and if you want to collapse it then provide same styles to thaf one as well */
+
+            /* one more tarika */
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        /* for line namings */
+        .conatiner{
+             grid-template-columns: [one]150px [two]100px [teen];
+        }
+        .item4{
+            grid-column:one/teen ;
+        }
+    </style>
+
+
+    <!-- 
+Grid Lines
+Grid Cell
+Grid Track - Space between two grid lines
+Grid Area -  any area in grid
+indexes are there for grid lines
+we can even name the grid lines-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item4">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+
+</body>
+
+</html>
