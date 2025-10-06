@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+2 types of transform in CSS
+2d - 2 axis - x and y
+This property allows te content to be restructured in ways like transalate rotate, scale or skew, etc, As it is 2D, therefore the content is transformed into x and y dimesnions
+
+3d - 3axis - x,y and z
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transforms</title>
+
+    <style>
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        /* Rotate */
+        .box {
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.5turn); */
+            /* transform: rotateX(50deg); */
+        }
+
+
+        /* Scale */
+        .box {
+            /* transform: scale(1.6);
+            transform: scaleY(1.5); */
+            /* transform: scale3d(2, 1, 3);     */
+        }
+
+        /* Skew - Z axis won't allow Skew*/
+        .box {
+            /* transform: skew(20deg);
+            transform: skewY(20deg); */
+        }
+
+        /* Translate */
+        .box {
+            /* transform: translate(10px); */
+            /* transform: translateY(40px); */
+            /* transform: translate(50%); */
+
+        }
+
+        /* Multiple transform together */
+        .box {
+            transform: translateX(20px) rotate(40deg) skew(30deg);
+        }
+
+        /* Transform Origin - by default it is the centre of the item */
+        .box {
+            transform-origin: 0, 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+
+</body>
+
+</html>
