@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+
+    <style>
+        .container {
+            background-color: aqua;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box {
+            background-color: rebeccapurple;
+            width: 5vw;
+            height: 4vh;
+        }
+
+        /* To make this translate smoot we use transisiton */
+        .translate {
+            background-color: blue;
+            transform: translateX(10vw) translateY(10vh);
+            /* transition-property: transform, background-color; */
+            /* transition-property: all; */
+            /* apply to all props*/
+            /* transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+
+            /* combined form */
+
+            transition: all 3s ease-in 1s;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+
+</body>
+
+</html>
