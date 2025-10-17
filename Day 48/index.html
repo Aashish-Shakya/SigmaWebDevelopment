@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ex-8 - Solution</title>
     <style>
         .box {
             height: 121px;
@@ -13,7 +13,9 @@
             border-radius: 70px;
             position: absolute;
             bottom: 0;
-            left: 0; 
+            left: 0;
+            animation: bounce 6s 1 linear;
+            animation-fill-mode: forwards;
         }
 
         .container {
@@ -22,7 +24,49 @@
             width: 80vw;
             background-color: blue;
         }
- 
+
+
+        @keyframes bounce {
+            0% {
+                bottom: 0;
+                left: 0;
+            }
+
+            20% {
+                bottom: 100px;
+                left: 100px;
+            }
+
+            40% {
+                bottom: 0;
+                left: 200px;
+            }
+
+            /* 40%{
+                bottom: 100px;
+            } */
+            60% {
+                bottom: 100px;
+                left: 300px;
+            }
+
+            80% {
+                bottom: 0;
+                left: 400px;
+            }
+
+            90% {
+                bottom: 100px;
+                left: 500px;
+            }
+
+            100% {
+                bottom: 0;
+                left: 600px;
+            }
+
+
+        }
     </style>
 </head>
 
